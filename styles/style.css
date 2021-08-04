@@ -131,3 +131,47 @@ height: 104px;
     border-radius: 14.6913px;
     color: #FF4A60;
 }
+
+/*----------------- 
+    Media Queries 
+-------------------*/
+
+/* Mobile devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        /* background-color: red; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+     
+    .blogs{
+     grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .players, .courses{
+        /* background-color: yellowgreen; */
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .container{
+        width: 90%;
+    }
+    
+}
